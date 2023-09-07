@@ -181,7 +181,7 @@ p {
 .intro h1::after {
   content: "";
   width: 5px;
-  height: 65px;
+  height: 45px;
   background: var(--sec-color);
   display: inline-block;
   animation: cursor-blink .8s steps(2) infinite;
@@ -386,7 +386,7 @@ p {
     font-size: 1.2rem;
   }
   .intro h1{
-    margin-top: -20px;
+    margin-top: 12px;
     font-size: 2.5rem;
   }
   .intro h2{
@@ -424,6 +424,10 @@ p {
   .contact-r{
     font-size: 4rem;
   }
+  .intro h1::after {
+    width: 4px;
+    height: 28px;
+  }
 }
 @media(max-width:500px){
   .main{
@@ -434,7 +438,7 @@ p {
     flex-direction: column;
     justify-content: space-between;
     padding-right: 0rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-left: -2rem;
   }
   .illustration img{
@@ -450,7 +454,7 @@ p {
   }
   .intro h1{
     font-size: 2rem;
-    margin-top: -18px;
+    margin-top: 14px;
   }
   .intro h2{
     font-size: 1.1rem;
@@ -524,6 +528,9 @@ p {
   }
   .contact-r{
     margin-left: -10rem;
+  }
+  .contact-container{
+    height: 65vh;
   }
 }
 @media only screen and (max-width: 425px) and (min-width: 390px){
