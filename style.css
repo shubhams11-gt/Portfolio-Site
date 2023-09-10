@@ -10,6 +10,27 @@
     color: #fff;
     background: var(--sec-color);
 }
+/* ===== Scrollbar CSS ===== */
+* {
+  scrollbar-width: none;
+  scrollbar-color: #00b4d8 #161616;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #161616;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #00b4d8;
+  border-radius: 2px;
+  border: 0px outset #ffffff;
+}
+/* ===== ------------- ===== */
 span{
     color: var(--sec-color);
 }
@@ -327,15 +348,18 @@ p {
   grid-gap: 2rem;
 }
 
-
 @media(max-width:1295px){
   .sidebar{
     display: none;
   }
   .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 12rem;
-    overflow-y: scroll;
+    overflow-y: none;
   }
+ 
   .sidebar-arrow .bx-left-arrow-alt{
     display: block;
   }
